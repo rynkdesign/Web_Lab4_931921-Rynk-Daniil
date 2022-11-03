@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #edeff0;
+}
+
+header {
+    background-color: #507299;
+    height: 45px;
+    width: 100%;
+    position: fixed;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding-top: 65px;
+    margin-left: -260px;
+}
+
+.logo {
+    padding-left: 200px;
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 15px;
+}
+
+li {
+    color: #507299;
+    width: 180px;
+    padding: 8px;
+}
+
+.btn:hover {
+        background-color: #e1e5eb;
+        cursor: pointer;
+}
+
+content {
+    width: 480px;
+}
+
+.post {
+    border: 20px solid white;
+    border-radius: 9px;
+    background-color: white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.main_header {
+    margin: 0;
+}
+
+hr {
+    border: none;
+    background-color: #d0d0d0;
+    height: 3px;
+}
+
+.main_hr {
+    margin: 10px -20px;
+}
+
+.post_footer {
+    color: #507299;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cat {
+    width: 100%;
+}
+
+aside {
+    position: fixed;
+    right: 17vw;
+    width: 170px;
+}
+
+.block_aside {
+    border: 15px solid white;
+    border-radius: 5px;
+    background-color: white;
+    margin-bottom: 20px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5)
+}
+
+footer {
+    line-height: 30px;
+    color: gray;
+    background-color: white;
+    text-align: center;
+}
+
+::selection {
+    color: green;
+    background-color: #e0e4ea;
+}
+
+p {
+    background-color: #edeef0;
+}
+
+@media screen and (max-width: 1250px) {
+    main {
+        margin: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    ul {
+        justify-content: center;
+        margin-bottom: 40px;
+        width: 480px;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    li {
+        width: auto;
+        margin: 0 10px;
+    }
+
+    aside{
+        display: none;
+    }
+}
